@@ -10,6 +10,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val binding:ActivityMainBinding = DataBindingUtil.setContentView(this , R.layout.activity_main)
+        val binding:ActivityMainBinding = DataBindingUtil.setContentView<ActivityMainBinding>(this , R.layout.activity_main)
     }
 }
