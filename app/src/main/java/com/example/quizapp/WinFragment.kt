@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import com.example.quizapp.databinding.FragmentAboutBinding
+import com.example.quizapp.databinding.FragmentWinBinding
 
 
 class WinFragment : Fragment() {
@@ -17,7 +18,7 @@ class WinFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val binding: FragmentAboutBinding = DataBindingUtil.inflate(inflater , R.layout.fragment_win , container , false)
+        val binding: FragmentWinBinding = DataBindingUtil.inflate(inflater , R.layout.fragment_win , container , false)
         return binding.root
     }
 

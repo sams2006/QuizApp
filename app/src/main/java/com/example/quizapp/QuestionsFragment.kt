@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import com.example.quizapp.databinding.FragmentAboutBinding
+import com.example.quizapp.databinding.FragmentQuestionsBinding
 
 
 class QuestionsFragment : Fragment() {
@@ -16,7 +17,7 @@ class QuestionsFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val binding: FragmentAboutBinding = DataBindingUtil.inflate(inflater , R.layout.fragment_questions , container , false)
+        val binding: FragmentQuestionsBinding = DataBindingUtil.inflate(inflater , R.layout.fragment_questions , container , false)
         return binding.root
     }
 

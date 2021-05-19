@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.example.quizapp.StartFragment"
+        android:label="StartFragment"
+        tools:layout="@layout/fragment_start"/>
+    <fragment
+        android:id="@+id/questionsFragment"
+        android:name="com.example.quizapp.QuestionsFragment"
+        android:label="QuestionsFragment"
+        tools:layout="@layout/fragment_questions"/>
+    <fragment
+        android:id="@+id/winFragment"
+        android:name="com.example.quizapp.WinFragment"
+        android:label="WinFragment"
+        tools:layout="@layout/fragment_win"/>
+    <fragment
+        android:id="@+id/gameOverFragment"
+        android:name="com.example.quizapp.GameOverFragment"
+        android:label="GameOverFragment"
+        tools:layout="@layout/fragment_game_over"/>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.quizapp.AboutFragment"
+        android:label="AboutFragment"
+        tools:layout="@layout/fragment_about"/>
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.example.quizapp.InfoFragment"
+        android:label="InfoFragment"
+        tools:layout="@layout/fragment_info"/>
+</navigation>
