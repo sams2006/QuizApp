@@ -9,12 +9,23 @@
         android:id="@+id/startFragment"
         android:name="com.example.quizapp.StartFragment"
         android:label="StartFragment"
-        tools:layout="@layout/fragment_start"/>
+        tools:layout="@layout/fragment_start">
+        <action
+            android:id="@+id/action_startFragment_to_questionsFragment"
+            app:destination="@id/questionsFragment" />
+    </fragment>
     <fragment
         android:id="@+id/questionsFragment"
         android:name="com.example.quizapp.QuestionsFragment"
         android:label="QuestionsFragment"
-        tools:layout="@layout/fragment_questions"/>
+        tools:layout="@layout/fragment_questions">
+        <action
+            android:id="@+id/action_questionsFragment_to_winFragment"
+            app:destination="@id/winFragment" />
+        <action
+            android:id="@+id/action_questionsFragment_to_gameOverFragment"
+            app:destination="@id/gameOverFragment" />
+    </fragment>
     <fragment
         android:id="@+id/winFragment"
         android:name="com.example.quizapp.WinFragment"

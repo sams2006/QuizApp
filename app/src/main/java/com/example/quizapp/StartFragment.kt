@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.findNavController
 import com.example.quizapp.databinding.FragmentAboutBinding
 import com.example.quizapp.databinding.FragmentStartBinding
 
@@ -20,6 +21,9 @@ class StartFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val binding: FragmentStartBinding = DataBindingUtil.inflate(inflater , R.layout.fragment_start , container , false)
+        binding.playButton.setOnClickListener {  view:View ->
+            view.findNavController().navigate(R.id.action_startFragment_to_questionsFragment)
+        }
         return binding.root
     }
 
