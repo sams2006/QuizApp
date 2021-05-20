@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.Navigation
 import com.example.quizapp.databinding.FragmentAboutBinding
 import com.example.quizapp.databinding.FragmentWinBinding
 
@@ -19,6 +20,8 @@ class WinFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val binding: FragmentWinBinding = DataBindingUtil.inflate(inflater , R.layout.fragment_win , container , false)
+
+        binding.tryAgainButton.setOnClickListener ( Navigation.createNavigateOnClickListener(R.id.action_winFragment_to_questionsFragment) )
         return binding.root
     }
 
