@@ -22,6 +22,9 @@ class WinFragment : Fragment() {
         val binding: FragmentWinBinding = DataBindingUtil.inflate(inflater , R.layout.fragment_win , container , false)
 
         binding.tryAgainButton.setOnClickListener ( Navigation.createNavigateOnClickListener(R.id.action_winFragment_to_questionsFragment) )
+        val args = WinFragmentArgs.fromBundle(requireArguments())
+        binding.totalScore.text = args.numCorrect.toString()
+        binding.wrongAnswer.text = args.numWrong.toString()
         return binding.root
     }
 

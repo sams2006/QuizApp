@@ -39,6 +39,12 @@
             android:id="@+id/action_winFragment_to_questionsFragment"
             app:destination="@id/questionsFragment"
             app:popUpTo="@id/questionsFragment" />
+        <argument
+            android:name="numCorrect"
+            app:argType="integer" />
+        <argument
+            android:name="numWrong"
+            app:argType="integer" />
     </fragment>
     <fragment
         android:id="@+id/gameOverFragment"
@@ -49,6 +55,12 @@
             android:id="@+id/action_gameOverFragment_to_questionsFragment"
             app:destination="@id/questionsFragment"
             app:popUpTo="@id/questionsFragment" />
+        <argument
+            android:name="numCorrect"
+            app:argType="integer" />
+        <argument
+            android:name="numWrong"
+            app:argType="integer" />
     </fragment>
     <fragment
         android:id="@+id/aboutFragment"

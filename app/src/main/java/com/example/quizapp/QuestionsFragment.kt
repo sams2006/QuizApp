@@ -116,7 +116,7 @@ class QuestionsFragment : Fragment() {
                     binding.invalidateAll()
                 } else {
                     // result screen
-                    view.findNavController().navigate(R.id.action_questionsFragment_to_winFragment)
+                    view.findNavController().navigate(QuestionsFragmentDirections.actionQuestionsFragmentToWinFragment(correctAnswer , wrongAnswer))
                 }
 
             } else {
@@ -125,15 +125,15 @@ class QuestionsFragment : Fragment() {
                 wrongAnswer++
                 mCurrentQuestionIndex++
 
-                if (wrongAnswer == 3){
-                    view.findNavController().navigate(R.id.action_questionsFragment_to_gameOverFragment)
+                if (wrongAnswer >= 3){
+                    view.findNavController().navigate(QuestionsFragmentDirections.actionQuestionsFragmentToGameOverFragment(correctAnswer , wrongAnswer))
                 } else {
                     if (mCurrentQuestionIndex < mQuestionList.size){
                         setQuestion()
                         binding.invalidateAll()
                     }else {
                         // result screen
-                        view.findNavController().navigate(R.id.action_questionsFragment_to_winFragment)
+                        view.findNavController().navigate(QuestionsFragmentDirections.actionQuestionsFragmentToWinFragment(correctAnswer , wrongAnswer))
                     }
                 }
             }

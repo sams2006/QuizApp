@@ -23,6 +23,10 @@ class GameOverFragment : Fragment() {
         binding.tryAgainButton.setOnClickListener { view: View ->
             view.findNavController().navigate(R.id.action_gameOverFragment_to_questionsFragment)
         }
+
+        val args = GameOverFragmentArgs.fromBundle(requireArguments())
+        binding.totalScore.text = args.numCorrect.toString()
+        binding.wrongAnswer.text = args.numWrong.toString()
         return binding.root
     }
 
