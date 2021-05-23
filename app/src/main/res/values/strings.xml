@@ -16,4 +16,5 @@
     <string name="start_play">Start Play</string>
     <string name="congrtulations">Congrtulations</string>
     <string name="congratulations">congratulations</string>
+    <string name="share_text">%1$d incorrect answer , and  %2$d correct answer</string>
 </resources>

@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/startFragment"
         android:name="com.example.quizapp.StartFragment"
-        android:label="StartFragment"
+        android:label="Quiz App"
         tools:layout="@layout/fragment_start">
         <action
             android:id="@+id/action_startFragment_to_questionsFragment"
@@ -17,7 +17,7 @@
     <fragment
         android:id="@+id/questionsFragment"
         android:name="com.example.quizapp.QuestionsFragment"
-        android:label="QuestionsFragment"
+        android:label="Questions"
         tools:layout="@layout/fragment_questions">
         <action
             android:id="@+id/action_questionsFragment_to_winFragment"
@@ -33,7 +33,7 @@
     <fragment
         android:id="@+id/winFragment"
         android:name="com.example.quizapp.WinFragment"
-        android:label="WinFragment"
+        android:label="you win"
         tools:layout="@layout/fragment_win">
         <action
             android:id="@+id/action_winFragment_to_questionsFragment"
@@ -49,7 +49,7 @@
     <fragment
         android:id="@+id/gameOverFragment"
         android:name="com.example.quizapp.GameOverFragment"
-        android:label="GameOverFragment"
+        android:label="you loss"
         tools:layout="@layout/fragment_game_over">
         <action
             android:id="@+id/action_gameOverFragment_to_questionsFragment"
@@ -65,11 +65,11 @@
     <fragment
         android:id="@+id/aboutFragment"
         android:name="com.example.quizapp.AboutFragment"
-        android:label="AboutFragment"
-        tools:layout="@layout/fragment_about"/>
+        android:label="About"
+        tools:layout="@layout/fragment_about" />
     <fragment
         android:id="@+id/infoFragment"
         android:name="com.example.quizapp.InfoFragment"
-        android:label="InfoFragment"
-        tools:layout="@layout/fragment_info"/>
+        android:label="Info"
+        tools:layout="@layout/fragment_info" />
 </navigation>
